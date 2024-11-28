@@ -2,9 +2,8 @@ import { Stethoscope, Users } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 import FormSignInPatient from '@/components/form/auth/form-signin-patient';
-
-import { TabSplitContainer } from '@/components/user-auth/tab-split-container';
 import FormSignProfessional from '@/components/form/auth/form-signin-professional';
+import { TabSplitContainer } from '@/components/user-auth/tab-split-container';
 
 export default function Page() {
   return (
@@ -22,7 +21,7 @@ export default function Page() {
             description=" Accede a una plataforma diseñada para ayudarte a gestionar y consultar tu historial médico, 
                 contactar con profesionales de salud y recibir recomendaciones personalizadas. Crea tu cuenta 
                 como paciente y ten el control de tu bienestar."
-            imageUrl="/banners/patient-security.jfif"
+            imageUrl="/banners/patient-security.png"
             imageAlt="form-patient"
             formComponent={<FormSignInPatient />}
           />
@@ -32,7 +31,7 @@ export default function Page() {
             title="Registro de Profesional"
             icon={Stethoscope}
             description="Únete a nuestra red de profesionales de la salud y ofrece tus servicios de manera fácil y accesible para los pacientes. Regístrate como profesional y amplía tu alcance, administra citas y mantén tus datos actualizados."
-            imageUrl="/banners/professionales.jfif"
+            imageUrl="/banners/professionales.png"
             imageAlt="form-professional"
             formComponent={<FormSignProfessional />}
           />
