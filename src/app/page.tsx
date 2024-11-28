@@ -7,7 +7,7 @@ export default function MedicalPage() {
     <div className="py-20">
       <section className="text-start font-poppins text-blue-950 md:flex md:items-center md:justify-evenly">
         <div className="max-w-3xl space-y-5 p-8">
-          <h1 className="break-words text-5xl font-bold lg:text-7xl">
+          <h1 className="break-words p-1 text-4xl font-bold lg:text-7xl">
             Centralizamos tu salud, simplificamos tu vida.
           </h1>
           <h3 className="lg:text-2xl">
