@@ -84,7 +84,7 @@ export function MedicalDocList() {
                       <Tooltip>
                         <TooltipTrigger asChild>
                           <a
-                            href={`${config.apis.NEXT_PUBLIC_URL_BASE_IMAGES}${doc.url}`}
+                            href={doc.url}
                             download={doc.name}
                             target="_blank"
                             rel="noopener noreferrer"

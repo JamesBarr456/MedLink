@@ -30,7 +30,7 @@ export default function DoctorsList({ doctors }: DoctorsListProps) {
                 : ''
             }
             subtitle={'Especialista'}
-            imageUrl={`${config.apis.NEXT_PUBLIC_URL_BASE_IMAGES}${doctor.avatar}`}
+            imageUrl={doctor.avatar}
             stats={doctor.specialization[0]}
             tuition={String(doctor.licenseNumber)}
           />

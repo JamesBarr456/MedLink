@@ -103,7 +103,7 @@ export interface User {
   gender: Genders;
   aboutMe: string;
   email: string;
-  avatar: File;
+  avatar: string;
   phone: string;
   location: string;
   role: Role;

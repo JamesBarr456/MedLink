@@ -45,7 +45,7 @@ export function UserButton() {
             ) : (
               <>
                 <AvatarImage
-                  src={`${config.apis.NEXT_PUBLIC_URL_BASE_IMAGES}${profile?.avatar}`}
+                  src={profile?.avatar}
                   alt="User avatar"
                   className="rounded-full border-2 border-sky-300"
                 />

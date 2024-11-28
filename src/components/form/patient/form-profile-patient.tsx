@@ -88,7 +88,7 @@ export default function EditProfileForm({
       phone,
       email,
       location,
-      avatar,
+      avatar: undefined,
       height,
       weight,
       bloodType,

@@ -47,15 +47,15 @@ const DoctorCard = ({
 
           <p className="text-sm text-gray-500">{subtitle}</p>
 
-          <p className="mt-4 flex justify-center text-center">
+          <div className="mt-4 flex justify-center text-center">
             <Badge>
               {translateSpecialization(stats, specialtiesTranslationMap)}
             </Badge>
-          </p>
+          </div>
 
-          <p className="mt-4 flex justify-center text-center">
+          <div className="mt-4 flex justify-center text-center">
             <Badge variant={'outline'}>M.P: {tuition}</Badge>
-          </p>
+          </div>
         </div>
       </CardContent>
       <CardFooter className="p-4">

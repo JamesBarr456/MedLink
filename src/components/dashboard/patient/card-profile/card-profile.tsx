@@ -62,7 +62,7 @@ export const CardProfile = () => {
       <CardHeader className="flex justify-center pb-0 pt-6">
         <Avatar className="mx-auto h-40 w-40 border-4 border-white shadow-lg">
           <AvatarImage
-            src={`${config.apis.NEXT_PUBLIC_URL_BASE_IMAGES}${dataPatient.avatar}`}
+            src={dataPatient.avatar}
             alt={`${dataPatient.firstName}'s avatar`}
           />
           <AvatarFallback className="text-4xl">

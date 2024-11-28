@@ -60,7 +60,7 @@ export default function CardListPatients() {
                   {/* TODO: HABLAR CON SAUL PORQUE CON SOLO EL ID DE LOS PATIENTS NO HAGO MUCHO */}
                   <Avatar className="h-10 w-10">
                     <AvatarImage
-                      src={`${config.apis.NEXT_PUBLIC_URL_BASE_IMAGES}${patient.avatar}`}
+                      src={patient.avatar}
                       alt={`${patient.firstName} ${patient.lastName}`}
                     />
                     <AvatarFallback>{patient.firstName[0]}</AvatarFallback>
