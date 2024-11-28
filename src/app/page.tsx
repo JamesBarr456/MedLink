@@ -1,43 +1,21 @@
-'use client';
-
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-};
-
-const staggerChildren = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
 export default function MedicalPage() {
   return (
     <div className="py-20">
-      <motion.section
-        className="text-start font-poppins text-blue-950 md:flex md:items-center md:justify-evenly"
-        initial="initial"
-        animate="animate"
-        variants={staggerChildren}
-      >
-        <motion.div className="max-w-3xl space-y-5 p-8" variants={fadeInUp}>
-          <h1 className="break-words text-5xl font-bold lg:text-7xl">
+      <section className="text-start font-poppins text-blue-950 md:flex md:items-center md:justify-evenly">
+        <div className="max-w-3xl space-y-5 p-8">
+          <h1 className="break-words p-1 text-4xl font-bold lg:text-7xl">
             Centralizamos tu salud, simplificamos tu vida.
           </h1>
           <h3 className="lg:text-2xl">
             Gestiona tus registros médicos de forma segura y sencilla desde
             cualquier lugar.
           </h3>
-        </motion.div>
-        <motion.picture className="p-5" variants={fadeInUp}>
+        </div>
+        <picture className="p-5">
           <Image
             alt="banner-home"
             src={'/banners/banner1-home.png'}
@@ -45,18 +23,10 @@ export default function MedicalPage() {
             height={600}
             className="rounded-xl"
           />
-        </motion.picture>
-      </motion.section>
-      <motion.section
-        className="container mx-auto rounded-lg bg-white"
-        initial="initial"
-        animate="animate"
-        variants={staggerChildren}
-      >
-        <motion.article
-          className="flex flex-col items-center p-8 font-poppins lg:flex-row lg:justify-evenly"
-          variants={fadeInUp}
-        >
+        </picture>
+      </section>
+      <section className="container mx-auto rounded-lg bg-white">
+        <article className="flex flex-col items-center p-8 font-poppins lg:flex-row lg:justify-evenly">
           <picture className="p-5">
             <Image
               alt="banner-home"
@@ -78,11 +48,8 @@ export default function MedicalPage() {
               seguridad y normativas de Protección de Datos Personales (RGPD).
             </p>
           </div>
-        </motion.article>
-        <motion.article
-          className="flex flex-col items-center p-8 font-poppins lg:flex-row lg:justify-evenly"
-          variants={fadeInUp}
-        >
+        </article>
+        <article className="flex flex-col items-center p-8 font-poppins lg:flex-row lg:justify-evenly">
           <div className="max-w-xl space-y-5 text-center lg:text-start">
             <h2 className="text-3xl font-bold">Gestion de Usuarios</h2>
             <p className="leading-loose">
@@ -105,11 +72,8 @@ export default function MedicalPage() {
               className="rounded-xl"
             />
           </picture>
-        </motion.article>
-        <motion.article
-          className="flex flex-col items-center p-8 font-poppins lg:flex-row lg:justify-evenly"
-          variants={fadeInUp}
-        >
+        </article>
+        <article className="flex flex-col items-center p-8 font-poppins lg:flex-row lg:justify-evenly">
           <picture className="p-5">
             <Image
               alt="banner-home"
@@ -137,11 +101,8 @@ export default function MedicalPage() {
               efectivo y personalizado.
             </p>
           </div>
-        </motion.article>
-        <motion.article
-          className="flex flex-col items-center p-8 font-poppins lg:flex-row lg:justify-evenly"
-          variants={fadeInUp}
-        >
+        </article>
+        <article className="flex flex-col items-center p-8 font-poppins lg:flex-row lg:justify-evenly">
           <div className="max-w-xl space-y-5 text-center lg:text-start">
             <h2 className="text-3xl font-bold">
               Todo sobre Tu Médico en un Solo Lugar
@@ -169,15 +130,10 @@ export default function MedicalPage() {
               className="rounded-xl"
             />
           </picture>
-        </motion.article>
-      </motion.section>
-      <motion.section
-        className="container mx-auto flex flex-col items-center rounded-lg pb-20 font-poppins"
-        initial="initial"
-        animate="animate"
-        variants={staggerChildren}
-      >
-        <motion.picture className="p-5" variants={fadeInUp}>
+        </article>
+      </section>
+      <section className="container mx-auto flex flex-col items-center rounded-lg pb-20 font-poppins">
+        <picture className="p-5">
           <Image
             alt="banner-home"
             src={'/images/home/contact.png'}
@@ -185,15 +141,15 @@ export default function MedicalPage() {
             height={700}
             className="rounded-xl"
           />
-        </motion.picture>
-        <motion.div variants={fadeInUp}>
+        </picture>
+        <div>
           <Button asChild className="rounded-xl p-10">
             <Link href={'/contacto'} className="text-xl">
               Ponte en contacto con Nosotros
             </Link>
           </Button>
-        </motion.div>
-      </motion.section>
+        </div>
+      </section>
     </div>
   );
 }
