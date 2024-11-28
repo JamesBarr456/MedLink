@@ -3,6 +3,49 @@ import { Github, Instagram, Linkedin } from 'lucide-react';
 export const teamMembers = [
   {
     avatarSrc:
+      'https://www.shutterstock.com/image-vector/vector-halloween-faces-nightmare-before-260nw-2047758854.jpg',
+    description:
+      'Ingeniero electromecánico iniciando mi carrera como desarrollador web front end, con entusiasmo por aprender y convertirme en full stack.',
+    skills: [
+      'SASS',
+      'NODEJS',
+      'TAILWIND',
+      'MUI',
+      'BOOSTRAP',
+      'NEXTJS',
+      'TYPESCRIPT',
+      'SHADCN',
+      'DOCKER',
+      'GIT',
+      'FIREBASE',
+      'MONGODB',
+      'SQLLITE',
+      'MYSQL',
+      'POSTGRESQL',
+      'NEXTUI',
+      'OAUTH',
+      'ZOD',
+      'API REST',
+    ],
+    socialLinks: [
+      {
+        icon: Linkedin,
+        url: 'https://www.linkedin.com/in/santiago-emmanuel-barreto',
+      },
+      {
+        icon: Github,
+        url: 'https://github.com/JamesBarr456',
+      },
+      {
+        icon: Instagram,
+        url: 'https://www.instagram.com/barretoemmanuel',
+      },
+    ],
+    name: 'Emmanuel Santiago Barreto',
+    role: 'Front End',
+  },
+  {
+    avatarSrc:
       'https://ui-avatars.com/api/?name=Bruno+Emanuel+Catterino&background=random',
     description:
       'Soy diseñador gráfico y hace un año comencé a explorar el mundo de la programación, ampliando mis habilidades en el desarrollo web.',
@@ -136,48 +179,5 @@ export const teamMembers = [
     ],
     name: 'Jose Maria Candia',
     role: 'Back End',
-  },
-  {
-    avatarSrc:
-      'https://www.shutterstock.com/image-vector/vector-halloween-faces-nightmare-before-260nw-2047758854.jpg',
-    description:
-      'Ingeniero electromecánico iniciando mi carrera como desarrollador web front end, con entusiasmo por aprender y convertirme en full stack.',
-    skills: [
-      'SASS',
-      'NODEJS',
-      'TAILWIND',
-      'MUI',
-      'BOOSTRAP',
-      'NEXTJS',
-      'TYPESCRIPT',
-      'SHADCN',
-      'DOCKER',
-      'GIT',
-      'FIREBASE',
-      'MONGODB',
-      'SQLLITE',
-      'MYSQL',
-      'POSTGRESQL',
-      'NEXTUI',
-      'OAUTH',
-      'ZOD',
-      'API REST',
-    ],
-    socialLinks: [
-      {
-        icon: Linkedin,
-        url: 'https://www.linkedin.com/in/santiago-emmanuel-barreto',
-      },
-      {
-        icon: Github,
-        url: 'https://github.com/JamesBarr456',
-      },
-      {
-        icon: Instagram,
-        url: 'https://www.instagram.com/barretoemmanuel',
-      },
-    ],
-    name: 'Emmanuel Santiago Barreto',
-    role: 'Front End',
   },
 ];
