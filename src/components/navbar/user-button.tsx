@@ -14,6 +14,7 @@ import { useEffect, useState } from 'react';
 
 import Link from 'next/link';
 import { Skeleton } from '@/components/ui/skeleton';
+import { config } from '@/config/public/dev';
 import { useAuth } from '@/context/auth-context';
 
 export function UserButton() {
@@ -44,7 +45,7 @@ export function UserButton() {
             ) : (
               <>
                 <AvatarImage
-                  src={`${process.env.NEXT_PUBLIC_URL_BASE_IMAGES}${profile?.avatar}`}
+                  src={`${config.apis.NEXT_PUBLIC_URL_BASE_IMAGES}${profile?.avatar}`}
                   alt="User avatar"
                   className="rounded-full border-2 border-sky-300"
                 />

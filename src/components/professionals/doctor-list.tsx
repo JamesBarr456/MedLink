@@ -3,6 +3,7 @@
 import { Button } from '../ui/button';
 import DoctorCard from './card-doctor';
 import { UserDoctor } from '@/interfaces/auth';
+import { config } from '@/config/public/dev';
 import { useState } from 'react';
 
 interface DoctorsListProps {
@@ -29,7 +30,7 @@ export default function DoctorsList({ doctors }: DoctorsListProps) {
                 : ''
             }
             subtitle={'Especialista'}
-            imageUrl={`${process.env.NEXT_PUBLIC_URL_BASE_IMAGES}${doctor.avatar}`}
+            imageUrl={`${config.apis.NEXT_PUBLIC_URL_BASE_IMAGES}${doctor.avatar}`}
             stats={doctor.specialization[0]}
             tuition={String(doctor.licenseNumber)}
           />

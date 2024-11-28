@@ -24,6 +24,7 @@ import { PatientDocumentationMedicalSkeleton } from '@/components/skeletons/pati
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { UserPatient } from '@/interfaces/auth';
 import { cn } from '@/lib/utils';
+import { config } from '@/config/public/dev';
 import { useAuth } from '@/context/auth-context';
 import { useParams } from 'next/navigation';
 import { useProfile } from '@/context/profile-context';
@@ -83,7 +84,7 @@ export function MedicalDocList() {
                       <Tooltip>
                         <TooltipTrigger asChild>
                           <a
-                            href={`${process.env.NEXT_PUBLIC_URL_BASE_IMAGES}${doc.url}`}
+                            href={`${config.apis.NEXT_PUBLIC_URL_BASE_IMAGES}${doc.url}`}
                             download={doc.name}
                             target="_blank"
                             rel="noopener noreferrer"

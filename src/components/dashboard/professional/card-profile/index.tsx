@@ -9,6 +9,7 @@ import { DoctorInfoCardSkeleton } from '@/components/skeletons/professional';
 import { Share2 } from 'lucide-react';
 import { UserDoctor } from '@/interfaces/auth';
 import { Whatsapp } from '@/components/icons/whatsapp';
+import { config } from '@/config/public/dev';
 import { useAuth } from '@/context/auth-context';
 import { useParams } from 'next/navigation';
 import { useProfile } from '@/context/profile-context';
@@ -53,7 +54,7 @@ export default function ProfileCard() {
         <div className="flex flex-col items-center gap-6 md:flex-row md:items-center">
           <Avatar className="h-44 w-44">
             <AvatarImage
-              src={`${process.env.NEXT_PUBLIC_URL_BASE_IMAGES}${userDoctor.avatar}`}
+              src={`${config.apis.NEXT_PUBLIC_URL_BASE_IMAGES}${userDoctor.avatar}`}
               alt={`Avatar of ${userDoctor.firstName}`}
               className="object-cover"
             />

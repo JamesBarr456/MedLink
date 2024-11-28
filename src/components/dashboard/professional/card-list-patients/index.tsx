@@ -24,6 +24,7 @@ import { InformationNotAvailable } from '@/components/other/information-not-avai
 import Link from 'next/link';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { SendEmailPatient } from '@/components/form/professional/form-send-email-patient';
+import { config } from '@/config/public/dev';
 import { useAuth } from '@/context/auth-context';
 import { useParams } from 'next/navigation';
 
@@ -59,7 +60,7 @@ export default function CardListPatients() {
                   {/* TODO: HABLAR CON SAUL PORQUE CON SOLO EL ID DE LOS PATIENTS NO HAGO MUCHO */}
                   <Avatar className="h-10 w-10">
                     <AvatarImage
-                      src={`${process.env.NEXT_PUBLIC_URL_BASE_IMAGES}${patient.avatar}`}
+                      src={`${config.apis.NEXT_PUBLIC_URL_BASE_IMAGES}${patient.avatar}`}
                       alt={`${patient.firstName} ${patient.lastName}`}
                     />
                     <AvatarFallback>{patient.firstName[0]}</AvatarFallback>
