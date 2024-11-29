@@ -5,7 +5,7 @@ import { Users } from 'lucide-react';
 import { professionalService } from '@/services/professional-service';
 
 const { getAllProfessional } = professionalService;
-export default async function Page() {
+export default function Page() {
   // let doctors;
 
   // try {
