@@ -1,16 +1,33 @@
+'use client';
+import { useEffect, useState } from 'react';
 import DoctorsList from '@/components/professionals/doctor-list';
 import { Users } from 'lucide-react';
 import { professionalService } from '@/services/professional-service';
 
 const { getAllProfessional } = professionalService;
 export default async function Page() {
-  let doctors;
+  // let doctors;
 
-  try {
-    doctors = await getAllProfessional();
-  } catch (e) {
-    console.error(e);
-  }
+  // try {
+  //   doctors = await getAllProfessional();
+  // } catch (e) {
+  //   console.error(e);
+  // }
+
+  const [doctors, setDoctors] = useState([]);
+
+  useEffect(() => {
+    const fetchDoctors = async () => {
+      try {
+        const result = await getAllProfessional();
+        setDoctors(result);
+      } catch (e) {
+        console.error(e);
+      }
+    };
+
+    fetchDoctors();
+  }, []);
 
   return (
     <section
